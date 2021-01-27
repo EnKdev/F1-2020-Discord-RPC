@@ -1,2 +1,5 @@
+/assets/icons/win/rpccover.png
+/assets/tracks/*
 /build
 /node_modules
+.idea

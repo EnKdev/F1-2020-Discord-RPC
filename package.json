@@ -1,23 +1,23 @@
 {
-  "name": "f1richpresence",
-  "version": "1.0.0",
-  "description": "",
+  "name": "f12020rpc",
+  "version": "1.1.0",
+  "description": "An app that adds Rich Presence Support to F1 2020",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
-    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
-    "package-win": "electron-packager . f12020-rpc --overwrite --asar=true --platform=win32 --arch=ia32 --icon=./assets/icons/win/icon.ico --prune=true --out=build --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"F12020 RichPresence\"",    
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icons.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . f12020-rpc-client --overwrite --asar=true --platform=win32 --arch=ia32 --icon=./assets/icons/win/icon.ico --prune=true --out=build --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"F1 2020 Rich Presence\"",
     "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "debug": "^4.1.1",
-    "discord-rich-presence": "0.0.8",
-    "f1-2020-client": "^0.1.6"
+    "debug": "^4.3.1",
+    "discord-rich-presence": "^0.0.8",
+    "f1-telemetry-client": "^0.1.18"
   },
   "devDependencies": {
     "electron": "^10.0.0",
-    "electron-packager": "^15.1.0"
+    "electron-packager": "^15.2.0"
   }
 }

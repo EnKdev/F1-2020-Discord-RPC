@@ -1,8 +1,8 @@
 [
-    {
-        "Type": "Singleplayer"
-    },
-    {
-        "Type": "Multiplayer"
-    }
+  {
+    "Type": "Singleplayer"
+  },
+  {
+    "Type": "Multiplayer"
+  }
 ]

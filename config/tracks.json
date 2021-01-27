@@ -1,83 +1,83 @@
 [
-    {
-        "Name": "Melbourne"
-    },
-    {
-        "Name": "Paul Ricard"
-    },
-    {
-        "Name": "Shanghai"
-    },
-    {
-        "Name": "Sakhir (Bahrain)"
-    },
-    {
-        "Name": "Catalunya"
-    },
-    {
-        "Name": "Monaco"
-    },
-    {
-        "Name": "Montreal"
-    },
-    {
-        "Name": "Silverstone"
-    },
-    {
-        "Name": "Hockenheim"
-    },
-    {
-        "Name": "Hungaroring"
-    },
-    {
-        "Name": "Spa"
-    },
-    {
-        "Name": "Monza"
-    },
-    {
-        "Name": "Singapore"
-    },
-    {
-        "Name": "Suzuka"
-    },
-    {
-        "Name": "Abu Dhabi"
-    },
-    {
-        "Name": "Texas"
-    },
-    {
-        "Name": "Brazil"
-    },
-    {
-        "Name": "Austria"
-    },
-    {
-        "Name": "Sochi"
-    },
-    {
-        "Name": "Mexico"
-    },
-    {
-        "Name": "Baku (Azerbaijan)"
-    },
-    {
-        "Name": "Sakhir Short"
-    },
-    {
-        "Name": "Silverstone Short"
-    },
-    {
-        "Name": "Texas Short"
-    },
-    {
-        "Name": "Suzuka Short"
-    },
-    {
-        "Name": "Hanoi"
-    },
-    {
-        "Name": "Zandvoort"
-    }
+  {
+    "Name": "Australia | Albert Park"
+  },
+  {
+    "Name": "France | Lé Castellet"
+  },
+  {
+    "Name": "China | Shanghai"
+  },
+  {
+    "Name": "Bahrain | Sakhir"
+  },
+  {
+    "Name": "Spain | Barcelona-Catalunya"
+  },
+  {
+    "Name": "Monaco"
+  },
+  {
+    "Name": "Canada | Montreal"
+  },
+  {
+    "Name": "England | Silverstone"
+  },
+  {
+    "Name": "Germany | Hockenheim"
+  },
+  {
+    "Name": "Hungary | Hungaroring"
+  },
+  {
+    "Name": "Belgium | Spa-Francorchamps"
+  },
+  {
+    "Name": "Italy | Monza"
+  },
+  {
+    "Name": "Singapore"
+  },
+  {
+    "Name": "Japan | Suzuka"
+  },
+  {
+    "Name": "Abu Dhabi | Yas Marina"
+  },
+  {
+    "Name": "USA | Texas"
+  },
+  {
+    "Name": "Brazil | Interlagos"
+  },
+  {
+    "Name": "Austria | Spielberg"
+  },
+  {
+    "Name": "Russia | Sochi"
+  },
+  {
+    "Name": "Mexico | Mexico-City"
+  },
+  {
+    "Name": "Azerbaijan | Baku"
+  },
+  {
+    "Name": "Bahrain | Sakhir (Short)"
+  },
+  {
+    "Name": "England | Silverstone (Short)"
+  },
+  {
+    "Name": "USA | Texas (Short)"
+  },
+  {
+    "Name": "Japan | Suzuka (Short)"
+  },
+  {
+    "Name": "Vietnam | Hanoi"
+  },
+  {
+    "Name": "Netherlands | Zandvoort"
+  }
 ]

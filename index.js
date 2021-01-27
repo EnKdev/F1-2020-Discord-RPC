@@ -1,12 +1,12 @@
-const client = require("discord-rich-presence")(yourclientid);
-const { F1TelemetryClient, constants } = require("f1-2020-client");
-const { app, BrowserWindow } = require("electron");
-
-const { PACKETS } = constants;
+const Client = require("discord-rich-presence")(/* Your Client ID here */);
+const {F1TelemetryClient, constants} = require("f1-telemetry-client");
+const {app, BrowserWindow} = require("electron");
+const {PACKETS} = constants;
 
 const Tracks = require("./config/tracks.json");
-const Session = require("./config/SessionTypes.json");
-const CarType = require("./config/Cars.json");
+const Session = require("./config/SessionType.json");
+const CarType = require("./config/CarType.json")
+const LargeImage = require("./config/imageTrack.json");
 
 const f1Client = new F1TelemetryClient();
 
@@ -16,54 +16,54 @@ let interval;
 f1Client.start();
 
 resetStatus = () => {
-  client.updatePresence({
-    state: "In the paddock",
-    largeImageKey: "f12020",
-    startTimestamp: date,
-  });
+    Client.updatePresence({
+        state: "In the paddocks",
+        largeImageKey: "backcover",
+        startTimestamp: date
+    });
 };
 
-f1Client.on(PACKETS.session, (data) => {
-  if (interval) {
-    clearInterval(interval);
-  }
+f1Client.on(PACKETS.session, (sData) => {
+        if (interval)
+            clearInterval(interval);
 
-  client.updatePresence({
-    details: `${Session[data.m_sessionType].Type} at ${
-      Tracks[data.m_trackId].Name
-    }`,
-    state: `${CarType[data.m_formula].CarType}`,
-    largeImageKey: "f12020",
-    startTimestamp: date,
-  });
-  console.log(data);
-  interval = setInterval(() => {
-    resetStatus();
-  }, 5000);
+        Client.updatePresence({
+            details: `${CarType[sData.m_formula].CarType}`,
+            state: `${Session[sData.m_sessionType].Type} - ${
+                Tracks[sData.m_trackId].Name
+            }`,
+            smallImageKey: "backcover",
+            smallImageText: "F1 2020",
+            largeImageKey: `${LargeImage[sData.m_trackId].imageKey}`,
+            largeImageText: `Racing on ${Tracks[sData.m_trackId].Name}`
+        });
+
+        console.log(sData);
+        interval = setInterval(() => {
+            resetStatus();
+        }, 5000);
 });
 
-client.updatePresence({
-  state: "In the paddock",
-  largeImageKey: "f12020",
-  startTimestamp: date,
+Client.updatePresence({
+    state: "In the paddocks",
+    largeImageKey: "backcover",
+    startTimestamp: date
 });
 
-//Electron
+// Electron
 function createWindow() {
-  // Crea la finestra del browser
-  const win = new BrowserWindow({
-    width: 300,
-    height: 150,
-    resizable: false,
-    webPreferences: {
-      nodeIntegration: true,
-    },
-    autoHideMenuBar: true,
-    icon: "./assets/icons/win/icon.ico",
-  });
+    const win = new BrowserWindow({
+        width: 300,
+        height: 150,
+        resizable: false,
+        webPreferences: {
+            nodeIntegration: true
+        },
+        autoHideMenuBar: true,
+        icon: "./assets/icons/win/icon.ico"
+    });
 
-  // and load the index.html of the app.
-  win.loadFile("index.html");
+    win.loadFile("index.html");
 }
 
 app.whenReady().then(createWindow);

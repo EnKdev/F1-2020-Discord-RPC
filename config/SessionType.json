@@ -1,0 +1,41 @@
+[
+  {
+    "Type": "Unknown"
+  },
+  {
+    "Type": "Free Practice 1"
+  },
+  {
+    "Type": "Free Practice 2"
+  },
+  {
+    "Type": "Free Practice 3"
+  },
+  {
+    "Type": "Short Practice"
+  },
+  {
+    "Type": "Qualifying 1"
+  },
+  {
+    "Type": "Qualifying 2"
+  },
+  {
+    "Type": "Qualifying 3"
+  },
+  {
+    "Type": "Short Qualifying"
+  },
+  {
+    "Type": "One-Shot Qualifying"
+  },
+  {
+    "Type": "Race"
+  },
+  {
+    "Type": "Sprint-Race (F2)"
+  },
+  {
+    "Type": "Time Trial"
+  }
+]
