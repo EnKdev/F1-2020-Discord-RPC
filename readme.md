@@ -4,6 +4,7 @@ Simple Discord RPC client for the game F1 2020.
 ##### To-do List
 
 - [x] Set the current track image when on track instead of showing the F1 2020 Logo
+- [ ] Display the team the player is driving for
 - [ ] GUI for the application
 - [ ] Show if the user is playing **Singleplayer** or **Multiplayer**
 
